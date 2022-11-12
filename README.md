@@ -12,8 +12,11 @@ driver = webdriver.Chrome()
 email = "some-email@email.address"
 password = "password123"
 actions.login(driver, email, password) # if email and password isnt given, it'll prompt in terminal
-person = Person("https://www.linkedin.com/in/andre-iguodala-65b48ab5", driver=driver)```
+person = Person("https://www.linkedin.com/in/andre-iguodala-65b48ab5", driver=driver)
+```
+
 登录账号应设为英文，不然会出错  
+
 
 保存员工信息
 ```xlsx = pd.ExcelFile(r'C:\Users\12610\领英\汽车整车制造企业名单_refined.xlsx')
@@ -62,7 +65,9 @@ actions.login(driver, email, password) # if email and password isnt given, it'll
             next_page = former_next_page[-1]
             next_page.click()
         else:
-            break```
+            break
+```
+
 所有员工的网址都保存在了网址.txt中,下一步就是读取该文件然后进入领英界面爬取要的数据
 
 抓取所需数据
