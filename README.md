@@ -187,7 +187,8 @@ for url in urls:
     newwb.save(excelname)
     count+=1
     driver.quit()
-    time.sleep(3)```
+    time.sleep(3)
+```
     
-
+注意：每次中断后开始参数xpath都会变化需要更改，所以使用这段代码的时候一定要去网页重新copy xpath。
 
